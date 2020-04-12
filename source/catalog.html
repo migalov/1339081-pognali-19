@@ -7,154 +7,179 @@
   <body>
     <header>
       <a class="logo logo--service" aria-label="Логотип Погнали?"></a>
-      <input type="checkbox" class="button menu-toggle">
+      <input type="checkbox" class="btn menu-toggle">
     </header>
-    <h1>Попутчики</h1>
-    <ul class="contacts">
-      <li><a class="button button--orange-dark button--icon button--phone" href="tel:88005558626" aria-label="Телефон: 88005558626"></a></li>
-      <li><a class="button button--orange-medium button--icon button--mail" href="mailto:mail@htmlacademy.ru" aria-label="Почта: mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-      <li><a class="button button--orange-light" href="mailto:mail@htmlacademy.ru" aria-label="Почта: mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-    </ul>
-    <blockquote>
-      <p>«Лучшее приложение, что я видел в жизни!»</p>
-      <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-    </blockquote>
-    <ol class="steps-list letsgo-gradient">
-      <li><a href="#one">Выберите направление</a></li>
-      <li><a href="#one">Изучите идеи путешественников</a></li>
-      <li><a href="#one">Находите тех, кто похож на вас</a></li>
-      <li><a href="#one">Путешествуйте вместе!</a></li>
-    </ol>
-    <section class="about">
-      <h2>О сервисе</h2>
-      <p>Любое путешествие веселее с попутчиками, которые на одной волн</p>
-      <strong>А если найдете кого-то близкого по духу — скорее зовите в сов</strong>
-    </section>
-    <section class="directions">
-      <h2>Направления</h2>
-      <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-      <ul class="directions__list">
-        <li>
-          <figure>
-            <img src="https://via.placeholder.com/270x110" width="270" height="110" alt="">
-            <figcaption class="icon icon--countries icon--tailand">
-              <h3>Тайланд</h3>
-              <p>Джунгли зовут!</p>
-              <span class="icon icon--users">18321</span>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://via.placeholder.com/270x110" width="270" height="110" alt="">
-            <figcaption class="icon icon--countries icon--france">
-              <h3>Франция</h3>
-              <p>Трэ бьен, манифик!</p>
-              <span class="icon icon--users">12518</span>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://via.placeholder.com/270x110" width="270" height="110" alt="">
-            <figcaption class="icon icon--countries icon--chehia">
-              <h3>Чехия</h3>
-              <p>Закоулки старой Европы</p>
-              <span class="icon icon--users">5326</span>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-      <a href="" class="button button--orange-bright button--show-to-all">Показать все</a>
-    </section>
-    <section class="companions">
-      <h2>Попутчики</h2>
-      <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <strong>Теперь можно легко найти единомышленников!</strong>
-      <ul class="companions__list">
-        <li>
-          <figure>
-            <div class="companion__level">80</div>
-            <img src="https://via.placeholder.com/270x270" width="270" height="270" alt="">
-            <figcaption>
-              <ul class="companion__countries">
-                <li class="icon icon--countries icon--country-1"></li>
-                <li class="icon icon--countries icon--country-2"></li>
-                <li class="icon icon--countries icon--country-3"></li>
+    <main>
+      <h1 class="page-tiile">Попутчики</h1>
+      <section class="companions content">
+        <h2 class="visibility-hidden">Попутчики</h2>
+        <ul class="companions__list">
+          <li>
+            <div class="user-card user-card--like status status--offline">
+              <a class="user-card__link" href="">
+                <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
+                <h3 class="user-card__name">Таня Фирсова</h3>
+                <span class="user-card__count-of-likes">1,5 M</span>
+              </a>
+              <ul class="user-card__hashtags">
+                <li><a href="#ZOJ">ЗОЖ</a></li>
+                <li><a href="#PP">ПП</a></li>
+                <li><a href="#Fintess">Фитнес</a></li>
+                <li><a href="#beach"></a>пляж</li>
+                <li><a href="#avocado">авокадо</a></li>
+                <li><a href="#smuzi">смузи</a></li>
               </ul>
-              <h3>Таня Фирсова</h3>
-              <ul class="hashtags">
-                <li><a href="#ZOJ"></a></li>
-                <li><a href="#PP"></a></li>
-                <li><a href="#Fintess"></a></li>
-                <li><a href="#beach"></a></li>
-                <li><a href="#avocado"></a></li>
-                <li><a href="#smuzi"></a></li>
+              <ul class="user-cart__short-info-lists">
+                <li>
+                  <h4 class="user-card__subtitle">Хочет посетить</h4>
+                  <ul class="user-card__countries">
+                    <li><a class="icon icon--country icon--lk" href="">Шри Ланка</a></li>
+                    <li><a class="icon icon--country icon--th" href="">Тайланд</a></li>
+                    <li><a class="icon icon--country icon--sc" href="">Сейшелы</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">Транспорт</h4>
+                  <ul class="user-card__ways">
+                    <li class="icon icon--plane icon--ready"></li>
+                    <li class="icon icon--bus"></li>
+                    <li class="icon icon--bicycle"></li>
+                    <li class="icon icon--walk"></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">левел</h4>
+                  <div class="user-card__level">99</div>
+                </li>
               </ul>
-              <ul class="ways">
-                <li class="icon icon--plane"></li>
-                <li class="icon icon--bus"></li>
-                <li class="icon icon--bicycle"></li>
-                <li class="icon icon--walk"></li>
+              <a class="btn user-cart__btn">Позвать</a>
+            </div>
+          </li>
+          <li>
+            <div class="user-card status status--offline">
+              <a class="user-card__link" href="">
+                <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин">
+                <h3 class="user-card__name">Петя Демин</h3>
+                <span class="user-card__count-of-likes">1500</span>
+              </a>
+              <ul class="user-card__hashtags">
+                <li><a class="hashtag" href="#burger">бургер</a></li>
+                <li><a class="hashtag" href="#bar">бар</a></li>
+                <li><a class="hashtag" href="#football">футбол</a></li>
+                <li><a class="hashtag" href="#concert">концерт</a></li>
+                <li><a class="hashtag" href="#craft">крафт</a></li>
               </ul>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <div class="companion__level">80</div>
-            <img src="https://via.placeholder.com/270x270" width="270" height="270" alt="">
-            <figcaption>
-              <ul class="companion__countries">
-                <li><svg></svg></li>
-                <li><svg></svg></li>
-                <li><svg></svg></li>
+              <ul class="user-cart__short-info-lists">
+                <li>
+                  <h4 class="user-card__subtitle">Хочет посетить</h4>
+                  <ul class="user-card__countries">
+                    <li><a class="icon icon--country icon--be" href="">Бельгия</a></li>
+                    <li><a class="icon icon--country icon--cz" href="">Чехия</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">Транспорт</h4>
+                  <ul class="user-card__ways">
+                    <li class="icon icon--plane icon--ready"></li>
+                    <li class="icon icon--bus icon--ready"></li>
+                    <li class="icon icon--bicycle"></li>
+                    <li class="icon icon--walk icon--ready"></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">левел</h4>
+                  <div class="user-card__level">99</div>
+                </li>
               </ul>
-              <h3>Таня Фирсова</h3>
-              <ul class="hashtags">
-                <li><a href="#ZOJ"></a></li>
-                <li><a href="#PP"></a></li>
-                <li><a href="#Fintess"></a></li>
-                <li><a href="#beach"></a></li>
-                <li><a href="#avocado"></a></li>
-                <li><a href="#smuzi"></a></li>
+              <a class="btn user-cart__btn">Позвать</a>
+            </div>
+          </li>
+          <li>
+            <div class="user-card status status--offline">
+              <a class="user-card__link" href="">
+                <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов">
+                <h3 class="user-card__name">Марк Смолов</h3>
+                <span class="user-card__count-of-likes">170</span>
+              </a>
+              <ul class="user-card__hashtags">
+                <li><a class="hashtag" href="#rap">рэп</a></li>
+                <li><a class="hashtag" href="#tatu">тату</a></li>
+                <li><a class="hashtag" href="#hipebist">хайпбист</a></li>
+                <li><a class="hashtag" href="#sneakers">кроссовки</a></li>
+                <li><a class="hashtag" href="#suprim">суприм</a></li>
               </ul>
-              <ul class="ways">
-                <li class="icon icon--plane"></li>
-                <li class="icon icon--bus"></li>
-                <li class="icon icon--bicycle"></li>
-                <li class="icon icon--walk"></li>
+              <ul class="user-cart__short-info-lists">
+                <li>
+                  <h4 class="user-card__subtitle">Хочет посетить</h4>
+                  <ul class="user-card__countries">
+                    <li><a class="icon icon--country icon--usa" href="">США</a></li>
+                    <li><a class="icon icon--country icon--au" href=""></a>Австралия</li>
+                    <li><a class="icon icon--country icon--dm" href=""></a>Доминика</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">Транспорт</h4>
+                  <ul class="user-card__ways">
+                    <li class="icon icon--plane icon--ready"></li>
+                    <li class="icon icon--bus"></li>
+                    <li class="icon icon--bicycle icon--ready"></li>
+                    <li class="icon icon--walk"></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">левел</h4>
+                  <div class="user-card__level">25</div>
+                </li>
               </ul>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-      <a href="" class="button button--orange-bright button--show-to-all">Показать всеx</a>
-    </section>
-    <section class="add-your-profile">
-      <h2>Добавьте свой профиль</h2>
-      <ol class="add-your-profile__features">
-        <li>
-          <ul>
-            <li>Базовое размещение</li>
-            <li>Бесплатно</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>Вывод на первых позициях</li>
-            <li>Бесплатно</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>Кастомный цвет карточки</li>
-            <li>59 руб./месяц</li>
-          </ul>
-        </li>
-      </ol>
-      <a href="" class="button button--show-to-all">Показать тарифы бизнеса</a>
-    </section>
+              <a class="btn user-cart__btn">Позвать</a>
+            </div>
+          </li>
+          <li>
+            <div class="user-card status status--online">
+              <a class="user-card__link" href="">
+                <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая">
+                <h3 class="user-card__name">Лариса Роговая</h3>
+                <span class="user-card__count-of-likes">23</span>
+              </a>
+              <ul class="user-card__hashtags">
+                <li><a class="hashtag" href="#education">образование</a></li>
+                <li><a class="hashtag" href="#career">карьера</a></li>
+                <li><a class="hashtag" href="#learn">хайпбист</a></li>
+                <li><a class="hashtag" href="#linkedin">линкедин</a></li>
+              </ul>
+              <ul class="user-cart__short-info-lists">
+                <li>
+                  <h4 class="user-card__subtitle">Хочет посетить</h4>
+                  <ul class="user-card__countries">
+                    <li><a class="icon icon--country icon--uk" href="">Великобритания</a></li>
+                    <li><a class="icon icon--country icon--de" href="">Германия</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">Транспорт</h4>
+                  <ul class="user-card__ways">
+                    <li class="icon icon--plane icon--ready"></li>
+                    <li class="icon icon--bus"></li>
+                    <li class="icon icon--bicycle icon--ready"></li>
+                    <li class="icon icon--walk"></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4 class="user-card__subtitle">левел</h4>
+                  <div class="user-card__level">25</div>
+                </li>
+              </ul>
+              <a class="btn user-cart__btn">Позвать</a>
+            </div>
+          </li>
+        </ul>
+        <a class="icon icon--plus content__show-more" href="">Показать ещё</a>
+        <div class="content__toggles">
+          <button class="content__page-prev" type="button" aria-label="Предыдущий"></button>
+          <button class="content__page-next" type="button" aria-label="Следующий"></button>
+        </div>
+      </section>
+    </main>
     <footer>
       <a href="" class="logo"></a>
       <ul class="social-networks">

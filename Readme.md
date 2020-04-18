@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Муньягисеньи](https://up.htmlacademy.ru/adaptive/19/user/1339081).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://htmlacademy.ru/profile/id23249).
 
 ---
 

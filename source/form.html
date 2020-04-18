@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo logo--service" aria-label="Логотип Погнали?"></a>
+      <input type="checkbox" class="btn menu-toggle">
+    </header>
+    <main>
+      <h1 class="page-tiile">Направления</h1>
+      <section class="user-card">
+        <div class="user-card__level">80</div>
+        <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
+        <button type="button">Сменить фото</button>
+        <div class="user-card__rounded-transparent" aria-label="Тэги">
+          <ul class="user-card__hashtags">
+            <li><a href="#ZOJ">ЗОЖ</a></li>
+            <li><a href="#PP">ПП</a></li>
+            <li><a href="#Fintess">Фитнес</a></li>
+            <li><a href="#beach">пляж</a></li>
+            <li><a href="#avocado">авокадо</a></li>
+            <li><a href="#smuzi">смузи</a></li>
+          </ul>
+        </div>
+        <div class="user-card__rounded-transparent" aria-label="Транспорт">
+          <ul class="user-card__ways">
+            <li class="icon icon--plane icon--ready"></li>
+            <li class="icon icon--bus"></li>
+            <li class="icon icon--bicycle"></li>
+            <li class="icon icon--walk"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="plans">
+        <h2>Мои планы</h2>
+        <ul>
+          <li>
+            <div class="plan">
+              <p>1. Франция, Италия</p>
+              <ul>
+                <li>3 попутчика</li>
+                <li>26 мар - 29 мар</li>
+              </ul>
+              <a class="plan__change" href="#">Изменить</a>
+            </div>
+          </li>
+          <li>
+            <div class="plan">
+              <p>2. Таиланд, Индонезия</p>
+              <ul>
+                <li>1 попутчик</li>
+                <li>1 июл - 15 июл</li>
+              </ul>
+              <a class="plan__change" href="#">Изменить</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="plans">
+        <h2>Добавить план</h2>
+        <ul class="pagination">
+          <li class="pagination__item"></li>
+          <li class="pagination__item"></li>
+          <li class="pagination__item active"></li>
+        </ul>
+        <ul class="plans-list">
+          <li>
+            <div class="plan">
+              <h3>Шаг 1. Даты пребывания</h3>
+              <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <ul class="plan-inputs-list">
+                <li>
+                  <button class="btn icon icon--minus" type="button"></button>
+                  <input class="plan-input" type="number" data-title="Ищу попутчиков" data-unit-type="Чел.">
+                  <button class="btn icon icon--plus" type="button"></button>
+                </li>
+                <li>
+                  <button class="btn icon icon--minus" type="button"></button>
+                  <input type="number" data-title="Длительность" data-unit-type="Дн.">
+                  <button class="btn icon icon--plus" type="button"></button>
+                </li>
+              </ul>
+              <label class="checkbox"><input class="icon icon--plane icon--ready" name="with-kids" type="checkbox">Можно с детьми</label>
+              <div class="calendar">
+                <div class="calendar__month-and-year">
+                  <h3>Март 2019</h3>
+                  <button class="btn icon icon--prev" type="button"></button>
+                  <button class="btn icon icon--next" type="button"></button>
+                </div>
+                <table class="calendar__days">
+                  <thead>
+                    <tr>
+                      <th aria-label="Понедельник">П</th>
+                      <th aria-label="Вторник">В</th>
+                      <th aria-label="Среда">С</th>
+                      <th aria-label="Четверг">Ч</th>
+                      <th aria-label="Пятница">П</th>
+                      <th aria-label="Суббота">С</th>
+                      <th aria-label="Воскресенье">В</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td class="day-next day-select">26</td>
+                    <td class="day-next day-select">27</td>
+                    <td class="day-next day-select">28</td>
+                    <td class="day-next">29</td>
+                  </tr>
+                  <tr>
+                    <td class="day-next">30</td>
+                    <td class="day-next">31</td>
+                    <td class="day-next">1</td>
+                    <td class="day-next">2</td>
+                    <td class="day-next">3</td>
+                    <td class="day-next">4</td>
+                    <td class="day-next">5</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="plans-buttons">
+                <a class="btn btn--bg-yellow" href="#">Следующий шаг</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="plan">
+              <h3>Шаг 1. Даты пребывания</h3>
+              <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <ul class="plan-countries-list">
+                <li>
+                  <select>
+                    <option value="Босния и герцегов">Босния и герцегов</option>
+                  </select>
+                  <div class="select-rounded-block">
+                    <a class="icon icon--country icon--lk" href=""></a>
+                    <a class="icon icon--close" href=""></a>
+                  </div>
+                </li>
+                <li>
+                  <select>
+                    <option value="Чехия">Чехия</option>
+                  </select>
+                  <div class="select-rounded-block">
+                    <a class="icon icon--country icon--lk" href=""></a>
+                    <a class="icon icon--close" href=""></a>
+                  </div>
+                </li>
+                <li>
+                  <select>
+                    <option>Выберите страну</option>
+                  </select>
+                  <div class="select-rounded-block">
+                    <a class="icon icon--country icon--lk" href=""></a>
+                    <a class="icon icon--close" href=""></a>
+                  </div>
+                </li>
+                <li>
+                  <a class="add-country" class="icon icon--plus" href="">Добавить страну</a>
+                  <div class="select-rounded-block">
+                    <a class="icon icon--country icon--lk" href=""></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="plans-buttons">
+                <a class="btn btn--bg-yellow" href="#">Следующий шаг</a>
+                <a class="btn" href="#">На шаг назад</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="plan">
+              <h3>Шаг 3. Развлечения</h3>
+              <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <ul class="plan-countries-list">
+                <li>
+                  <h4>Босния и Герцегови</h4><span class="icon icon--lk"></span>
+                  <textarea cols="30" rows="10" placeholder="План действий"></textarea>
+                </li>
+                <li>
+                  <h4>Чехия</h4><span class="icon icon--lk"></span>
+                  <textarea cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </li>
+              </ul>
+              <div class="plans-buttons">
+                <a class="btn btn--bg-yellow" href="#">Отправить</a>
+                <a class="btn" href="#">На шаг назад</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <a href="" class="logo"></a>
+      <ul class="social-networks">
+        <li><a href="" class="icon icon--fb"></a></li>
+        <li><a href="" class="icon icon--vk"></a></li>
+        <li><a href="" class="icon icon--instagram"></a></li>
+      </ul>
+      <div class="creator">
+        <span class="creator__text">Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo logo--creator" aria-label="Логотип HTML Academy"></a>
+      </div>
+    </footer>
+  </body>
+</html>

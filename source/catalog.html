@@ -11,24 +11,24 @@
     </header>
     <main>
       <h1 class="page-tiile">Попутчики</h1>
-      <div class="filter-countries" method="get">
+      <div class="filter-countries">
         <div class="filter-countries__head">
           <h2 class="icon icon--dashes">Фильтрация по странам</h2>
-          <a href="icon icon--more" aria-label="Показать всё"></a>
+          <a class="icon icon--more" aria-label="Показать всё"></a>
         </div>
       </div>
       <form class="travel-companion-search" action="https://echo.htmlacademy.ru" method="post">
         <h3>Подберите идеального попутчика</h3>
         <ul>
           <li>
-            <a class="filter-countries__show-list icon icon--arrow-down">Хобби</a>
+            <button class="filter-countries__show-list icon icon--arrow-down">Хобби</button>
           </li>
           <li>
             <a class="filter-countries__show-list icon icon--arrow-down" href="">Хобби</a>
             <ul class="filter-countries__list-checkboxes">
-              <li><input name="hobbi" type="checkbox">Тяжелый рок</li>
-              <li><input name="hobbi" type="checkbox">Русский рэп</li>
-              <li><input name="hobbi" type="checkbox">Евроденс</li>
+              <li><input name="hobbi" value="hardrock" id="hardrock" type="checkbox"><label for="hardrock">Тяжелый рок</label></li>
+              <li><input name="hobbi" value="russian-rap" id="russian-rap" type="checkbox"><label for="russian-rap">Русский рэп</label></li>
+              <li><input name="hobbi" value="eurodance" id="eurodance" type="checkbox"><label for="eurodance">Евроденс</label></li>
             </ul>
           </li>
           <li>
@@ -37,10 +37,10 @@
           <li>
             <a class="filter-countries__show-list icon icon--arrow-down">Транспорт</a>
             <ul class="filter-countries__list-checkboxes">
-              <li><input class="icon icon--plane icon--ready" name="transport" type="checkbox" aria-label="Самолет"></li>
-              <li><input class="icon icon--bus icon--ready" name="transport" type="checkbox" aria-label="Автобус"></li>
-              <li><input class="icon icon--bicycle icon--ready" name="transport" type="checkbox" aria-label="Велосипед"></li>
-              <li><input class="icon icon--walk icon--ready" name="transport" type="checkbox" aria-label="Пешком">/li>
+              <li><input class="icon icon--plane icon--ready" name="transport" value="Самолет" id="airplane" type="checkbox"><label for="airplane">Самолет</label></li>
+              <li><input class="icon icon--bus icon--ready" name="transport" value="Автобус" id="bus" type="checkbox"><label for="bus">Автобус</label></li>
+              <li><input class="icon icon--bicycle icon--ready" name="transport" value="Велосипед" id="bicycle" type="checkbox"><label for="bicycle">Велосипед</label></li>
+              <li><input class="icon icon--walk icon--ready" name="transport" value="Пешком" id="walk" type="checkbox"><label for="walk">Пешком</label></li>
             </ul>
           </li>
           <li>
@@ -58,6 +58,7 @@
             </div>
           </li>
         </ul>
+        <button class="btn user-cart__btn" type="submit">Показать все</button>
       </form>
 
       <section class="companions content">

@@ -11,6 +11,243 @@
     </header>
     <main>
       <h1 class="page-tiile">Направления</h1>
+      <section class="user-card">
+        <div class="user-card__level">80</div>
+        <img class="user-card__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
+        <button type="button">Сменить фото</button>
+        <div class="user-card__rounded-transparent">
+          <h3>Тэги</h3>
+          <ul class="user-card__hashtags">
+            <li><a href="#ZOJ">ЗОЖ</a></li>
+            <li><a href="#PP">ПП</a></li>
+            <li><a href="#Fintess">Фитнес</a></li>
+            <li><a href="#beach">пляж</a></li>
+            <li><a href="#avocado">авокадо</a></li>
+            <li><a href="#smuzi">смузи</a></li>
+          </ul>
+        </div>
+        <div class="user-card__rounded-transparent">
+          <h3>Транспорт</h3>
+          <ul class="user-card__ways">
+            <li class="icon icon--plane icon--ready"></li>
+            <li class="icon icon--bus"></li>
+            <li class="icon icon--bicycle"></li>
+            <li class="icon icon--walk"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="plans">
+        <h2>Мои планы</h2>
+        <ul>
+          <li>
+            <div class="plan">
+              <p>1. Франция, Италия</p>
+              <ul>
+                <li>3 попутчика</li>
+                <li>26 мар - 29 мар</li>
+              </ul>
+              <a class="plan__change" href="#">Изменить</a>
+            </div>
+          </li>
+          <li>
+            <div class="plan">
+              <p>2. Таиланд, Индонезия</p>
+              <ul>
+                <li>1 попутчик</li>
+                <li>1 июл - 15 июл</li>
+              </ul>
+              <a class="plan__change" href="#">Изменить</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <form class="plans" action="https://echo.htmlacademy.ru" method="post">
+        <h2>Добавить план</h2>
+        <ul class="pagination">
+          <li class="pagination__item"></li>
+          <li class="pagination__item"></li>
+          <li class="pagination__item active"></li>
+        </ul>
+        <ul class="plans-list">
+          <li>
+            <div class="plan">
+              <h3>Шаг 1. Даты пребывания</h3>
+              <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <ul class="plan-inputs-list">
+                <li class="plan-inputs-list__item">
+                  <button class="btn icon icon--minus" type="button"></button>
+                  <label>Ищу попутчиков</label>
+                  <label for="peoples">Чел.</label>
+                  <input id="peoples" type="number">
+                  <button class="btn icon icon--plus" type="button"></button>
+                </li>
+                <li class="plan-inputs-list__item">
+                  <label>Длительность</label>
+                  <label for="days">Дн.</label>
+                  <button class="btn icon icon--minus" type="button"></button>
+                  <input id="days" type="number">
+                  <button class="btn icon icon--plus" type="button"></button>
+                </li>
+              </ul>
+              <label class="checkbox"><input class="icon icon--plane icon--ready" name="with-kids" type="checkbox">Можно с детьми</label>
+              <div class="calendar">
+                <div class="calendar__month-and-year">
+                  <h3>Март 2019</h3>
+                  <button class="btn icon icon--prev" type="button"></button>
+                  <button class="btn icon icon--next" type="button"></button>
+                </div>
+                <table class="calendar__days">
+                  <thead>
+                    <tr>
+                      <th aria-label="Понедельник">П</th>
+                      <th aria-label="Вторник">В</th>
+                      <th aria-label="Среда">С</th>
+                      <th aria-label="Четверг">Ч</th>
+                      <th aria-label="Пятница">П</th>
+                      <th aria-label="Суббота">С</th>
+                      <th aria-label="Воскресенье">В</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td class="day-next day-select">26</td>
+                    <td class="day-next day-select">27</td>
+                    <td class="day-next day-select">28</td>
+                    <td class="day-next">29</td>
+                  </tr>
+                  <tr>
+                    <td class="day-next">30</td>
+                    <td class="day-next">31</td>
+                    <td class="day-next">1</td>
+                    <td class="day-next">2</td>
+                    <td class="day-next">3</td>
+                    <td class="day-next">4</td>
+                    <td class="day-next">5</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="plans-buttons">
+                <button type="submit" class="btn btn--bg-yellow">Следующий шаг</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="plan">
+              <h3>Шаг 1. Даты пребывания</h3>
+              <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <ul class="plan-countries-list">
+                <li class="plan-countries-item">
+                  <input class="select-country" type="button" value="Босния и герцегов">
+                  <ul class="select-country-option-list">
+                    <li><button type="button" class="select-country-option-item">Страна 1</button></li>
+                    <li><button type="button" class="select-country-option-item">Страна 2</button></li>
+                    <li><button type="button" class="select-country-option-item">Страна 3</button></li>
+                  </ul>
+                  <div class="select-rounded-block">
+                    <button type="button" class="icon icon--country icon--lk"></button>
+                    <button type="button" class="icon icon--close"></button>
+                  </div>
+                </li>
+                <li class="plan-countries-item">
+                  <input class="select-country" type="button" value="Босния и герцегов">
+                  <ul class="select-country-option-list">
+                    <li><button type="button" class="select-country-option-item">Страна 1</button></li>
+                    <li><button type="button" class="select-country-option-item">Страна 2</button></li>
+                    <li><button type="button" class="select-country-option-item">Страна 3</button></li>
+                  </ul>
+                  <div class="select-rounded-block">
+                    <button type="button" class="icon icon--country icon--lk"></button>
+                    <button type="button" class="icon icon--close"></button>
+                  </div>
+                </li>
+                <li>
+                  <input class="select-country" type="button" value="Выберите страну">
+                  <ul class="select-country-option-list">
+                    <li><button type="button" class="select-country-option-item">Страна 1</button></li>
+                    <li><button type="button" class="select-country-option-item">Страна 2</button></li>
+                    <li><button type="button" class="select-country-option-item">Страна 3</button></li>
+                  </ul>
+                  <div class="select-rounded-block">
+                    <button type="button" class="icon icon--country icon--lk"></button>
+                    <button type="button" class="icon icon--close"></button>
+                  </div>
+                </li>
+                <li>
+                  <input class="select-country select-country--add" type="button" value="Добавить страну">
+                  <div class="select-rounded-block">
+                    <button type="button" class="icon icon--country icon--lk"></button>
+                    <button type="button" class="icon icon--close"></button>
+                  </div>
+                </li>
+              </ul>
+              <div class="plans-buttons">
+                <button type="submit" class="btn btn--bg-yellow">Следующий шаг</button>
+                <button type="button" class="btn">На шаг назад</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="plan">
+              <h3>Шаг 3. Развлечения</h3>
+              <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <ul class="plan-countries-list">
+                <li>
+                  <h4>Босния и Герцегови</h4><span class="icon icon--lk"></span>
+                  <textarea cols="30" rows="10" placeholder="План действий"></textarea>
+                </li>
+                <li>
+                  <h4>Чехия</h4><span class="icon icon--lk"></span>
+                  <textarea cols="30" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </li>
+              </ul>
+              <div class="plans-buttons">
+                <button type="submit" class="btn btn--bg-yellow">Отправить</button>
+                <button type="button" class="btn">На шаг назад</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
     </main>
     <footer>
       <a href="" class="logo"></a>
